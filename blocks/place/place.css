@@ -1,12 +1,17 @@
 .place {
+  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(460px 484px);
-  grid-template-rows: repeat(fit-content 460px);
+  -ms-grid-columns: (484px)[460px];
+      grid-template-columns: repeat(460px 484px);
+  -ms-grid-rows: (460px)[fit-content];
+      grid-template-rows: repeat(fit-content 460px);
   grid-template-areas: 
   "title link"
   "image paragraph";
-  column-gap: 40px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
   row-gap: 48px;
   margin: 0;
   padding: 0;
@@ -14,24 +19,34 @@
 
 @media screen and (max-width: 1280px) {
   .place {
-    grid-template-columns: repeat(440px 456px);
-    grid-template-rows: repeat(fit-content 440px);
+    -ms-grid-columns: (456px)[440px];
+        grid-template-columns: repeat(440px 456px);
+    -ms-grid-rows: (440px)[fit-content];
+        grid-template-rows: repeat(fit-content 440px);
   }
 }
 
 @media screen and (max-width: 1024px) {
   .place {
-    grid-template-columns: repeat(340px 352px);
-    grid-template-rows: repeat(fit-content 340px);
-    column-gap: 28px;
+    -ms-grid-columns: (352px)[340px];
+        grid-template-columns: repeat(340px 352px);
+    -ms-grid-rows: (340px)[fit-content];
+        grid-template-rows: repeat(fit-content 340px);
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .place {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(4, fit-content);
-    column-gap: 0px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: (fit-content)[4];
+        grid-template-rows: repeat(4, fit-content);
+    -webkit-column-gap: 0px;
+       -moz-column-gap: 0px;
+            column-gap: 0px;
     grid-template-areas:
     "title"
     "link"
