@@ -1,15 +1,28 @@
 .place__website {
+  max-width: 484px;
+  margin: 0;
+  padding: 0;
   grid-area: link;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  margin: 0;
-  padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .place__website {
+    max-width: 456px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .place__website {
-    margin-left: 16px;
-    margin-right: 16px;
+    max-width: 352px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place__website {
+    min-width: calc(320px - 32px);
+    margin: 0 auto;
   }
 }

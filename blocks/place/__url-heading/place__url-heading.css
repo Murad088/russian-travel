@@ -1,4 +1,7 @@
 .place__url-heading {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 12px 0;
   font-family: 'Inter', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -6,6 +9,4 @@
   letter-spacing: 2px;
   text-align: left;
   color: #aaa;
-  margin: 0 0 12px 0;
-  padding: 0;
 }

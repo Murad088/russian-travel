@@ -1,4 +1,7 @@
 .intro__title {
+  max-width: 690px;
+  margin: 0;
+  padding: 0 0 40px 0;
   font-family: 'Inter', 'Arial', sans-serif;
   font-size: 54px;
   font-weight: 900;
@@ -6,26 +9,17 @@
   letter-spacing: 0em;
   text-align: left;
   color: #fff;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-
-@media screen and (max-width: 1280px) {
-  .intro__title {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .intro__title {
-    max-width: 100%;
-  }
 }
 
 @media screen and (max-width: 768px) {
   .intro__title {
-    max-width: 100%;
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .intro__title {
+    max-width: 288px;
     font-size: 32px;
     line-height: 35px;
   }
