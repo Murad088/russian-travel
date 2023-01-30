@@ -22,8 +22,6 @@
 
 @media screen and (max-width: 425px) {
   .place__image {
-    min-width: 100%;
-    -o-object-fit:scale-down;
-       object-fit:scale-down;
+    width: 100%;
   }
 }

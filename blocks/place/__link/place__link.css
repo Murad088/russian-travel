@@ -3,17 +3,18 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #fff;
   text-decoration: underline;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in linear;
+  -o-transition: 0.3s ease-in linear;
+  transition: 0.3s ease-in linear;
   margin: 0;
   padding: 0;
   max-width: 100%;
 }
 
-.place__link:hover{
+.place__link:hover {
   opacity: 0.8;
 }

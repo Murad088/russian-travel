@@ -2,11 +2,18 @@
   max-width: 176px;
   height: auto;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 48px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    padding-left: 24px;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .header__logo {
     max-width: 142px;
+    padding-left: 16px;
   }
 }

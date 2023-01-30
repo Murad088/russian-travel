@@ -3,9 +3,8 @@
   margin: 0;
   padding: 0;
   grid-area: link;
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 @media screen and (max-width: 1024px) {
@@ -20,9 +19,14 @@
   }
 }
 
+@media screen and (max-width: 730px) {
+  .place__website {
+    min-width: 100%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .place__website {
-    min-width: calc(320px - 32px);
-    margin: 0 auto;
+    min-width: calc(100% - (16px + 16px));
   }
 }

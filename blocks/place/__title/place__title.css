@@ -7,15 +7,15 @@
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
   color: #fff;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
 }
 
 @media screen and (max-width: 1024px) {
@@ -32,11 +32,16 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 730px) {
   .place__title {
-    min-width: calc(320px - 32px);
-    margin: 0 auto;
+    min-width: 100%;
     font-size: 32px;
     line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .place__title {
+    min-width: calc(100% - 32px);
   }
 }
