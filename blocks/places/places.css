@@ -1,12 +1,12 @@
 .places {
   max-width: 100%;
+  height: fit-content;
   margin: 0;
   padding: 0 0 92px 0;
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  -ms-grid-rows: minmax(660px, 1fr) 80px minmax(660px, 1fr) 80px minmax(660px, 1fr) 80px minmax(660px, 1fr) 80px minmax(660px, 1fr);
-  grid-template-rows: repeat(5, minmax(660px, 1fr));
+  grid-template-rows: repeat(5, fit-content(660px));
   row-gap: 80px;
   justify-items: center;
 }
@@ -19,13 +19,6 @@
 }
 
 @media screen and (max-width: 730px) {
-  .places {
-    row-gap: 50px;
-    padding-bottom: 66px;
-  }
-}
-
-@media screen and (max-width: 425px) {
   .places {
     row-gap: 50px;
     padding-bottom: 66px;

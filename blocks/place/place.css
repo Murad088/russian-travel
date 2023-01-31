@@ -1,19 +1,15 @@
 .place {
   max-width: calc(100% - (148px + 148px));
+  height: fit-content;
   margin: 0;
   padding: 0;
-  display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
-  -ms-grid-columns: fit-content(460px) 40px fit-content(484px);
   grid-template-columns: fit-content(460px) fit-content(484px);
-  -ms-grid-rows: fit-content(152px) 48px fit-content(460px);
   grid-template-rows: fit-content(152px) fit-content(460px);
   grid-template-areas:
     "title link"
     "image paragraph";
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
   column-gap: 40px;
   row-gap: 48px;
 }
@@ -21,76 +17,27 @@
 @media screen and (max-width: 1024px) {
   .place {
     max-width: calc(100% - (48px + 48px));
-    -ms-grid-columns: fit-content(440px) fit-content(456px);
     grid-template-columns: fit-content(440px) fit-content(456px);
-    -ms-grid-rows: fit-content(152px) fit-content(440px);
     grid-template-rows: fit-content(152px) fit-content(440px);
-  }
-
-  .place>*:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .place>*:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-  }
-
-  .place>*:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  .place>*:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 2;
   }
 }
 
 @media screen and (max-width: 768px) {
   .place {
     max-width: calc(100% - (24px + 24px));
-    -ms-grid-columns: fit-content(340px) 28px fit-content(352px);
     grid-template-columns: fit-content(340px) fit-content(352px);
-    -ms-grid-rows: fit-content(92px) fit-content(340px);
     grid-template-rows: fit-content(92px) fit-content(340px);
-    -webkit-column-gap: 28px;
-    -moz-column-gap: 28px;
     column-gap: 28px;
-  }
-
-  .place>*:nth-child(1) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-  }
-
-  .place>*:nth-child(2) {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  .place>*:nth-child(3) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  .place>*:nth-child(4) {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
   }
 }
 
 @media screen and (max-width: 730px) {
   .place {
     max-width: 100%;
-    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
-    -ms-grid-rows: fit-content(35px) fit-content(46px) fit-content(100%);
     grid-template-rows: fit-content(35px) fit-content(46px) fit-content(100%);
-    -webkit-column-gap: 0px;
-    -moz-column-gap: 0px;
     column-gap: 0px;
+    row-gap: 32px;
     grid-template-areas:
       "title"
       "link"

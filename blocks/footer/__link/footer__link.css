@@ -3,9 +3,7 @@
   padding: 0 18px 0 0;
   text-decoration: none;
   color: #fff;
-  -webkit-transition: 0.3s ease-in;
-  -o-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
+  transition: 0.3s ease-in linear;
 }
 
 .footer__link:hover{
@@ -17,5 +15,11 @@
     width: 100%;
     padding-top: 0;
     padding-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer__link:last-of-type {
+    padding-bottom: 0;
   }
 }

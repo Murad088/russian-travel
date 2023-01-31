@@ -3,14 +3,9 @@
   height: auto;
   margin: 0;
   padding: 0 48px 24px 48px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-  grid-template-columns: 60% 40%;
-  -ms-grid-rows: 18px;
+  grid-template-columns: 70% 30%;
   grid-template-rows: 18px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   justify-items: stretch;
   grid-template-areas:
@@ -29,18 +24,14 @@
   .footer {
     padding-left: 16px;
     padding-right: 16px;
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    -ms-grid-rows: fit-content(248px) fit-content(14px);
     grid-template-rows: fit-content(248px) fit-content(14px);
     grid-template-areas:
       "nav"
       "copyright";
-    -webkit-box-align: start;
-    -ms-flex-align: start;
     align-items: start;
-    -ms-grid-row-align: start;
     align-self: start;
     justify-items: start;
+    row-gap: 48px;
   }
 }
